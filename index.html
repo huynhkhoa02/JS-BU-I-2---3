@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <h3>bài 1: tính tiền lương nhân viên</h3>
+        <p>nhập tiền lương 1 ngày</p>
+        <input class="form-control w-50" id="tien-luong-1n">
+        <p>nhập số ngày làm</p>
+        <input class="form-control w-50" id="ngay-lam">
+        <button class="btn btn-dark my-2" id="btn-tinh-tien" onclick="tinhTien()">tính tiền</button>
+        <div class="alert bg-dark text-white p-3 w-50" id="ket-qua-bai-1"></div>
+
+
+        <hr>
+
+        <h3>bài 2: tính giá trị trung bình</h3>
+        <p>mời bạn nhập 5 số cần tính</p>
+        <input class="form-control w-25" id="num1">
+        <input class="form-control w-25" id="num2">
+        <input class="form-control w-25" id="num3">
+        <input class="form-control w-25" id="num4">
+        <input class="form-control w-25" id="num5">
+        <button class="btn btn-success" onclick="tinhTrungBinh()">bắt đầu tính</button>
+        <div class="alert bg-secondary w-50" id="ket-qua-bai-2"></div>
+
+        <hr>
+        <h3>bài 3: đổi ngoại tệ</h3>
+        <div>
+            <label>Nhập số tiền:</label>
+            <input type="number" id="soTien">
+        </div>
+        <div>
+            <label>Chọn loại tiền tệ:</label>
+            <select id="tienTe">
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+            </select>
+        </div>
+        <button onclick="doiNgoaiTe()">Quy đổi</button>
+        <p id="ket-qua-bai-3"></p>
+         <hr>
+
+         <h3>bài 4: tính diện tích hình chữ nhật</h3>
+         <p>nhập chiều dài</p>
+         <input class="form-control w-50" id="chieuDai">
+         <p>nhập chiều rộng</p>
+         <input class="form-control w-50" id="chieuRong">
+         <button class="btn btn-dark my-2" id="btn-tinh" onclick="tinhDienTich()">tính nè</button>
+         <p>chu vi là:</p>
+         <p id="ket-qua-bai-4"></p>
+         <p>diện tích là:</p>
+         <p id="ket-qua-bai-42"></p>
+
+         <hr>
+
+         <h3>bài 5: tính tổng 2 ký số</h3>
+         <p>mời bạn nhập 1 số có 2 chữ số</p>
+         <input class="form-control w-50 " id="num">
+         <button class="btn btn-success" onclick="tinhTong2KySo()">tính nè</button>
+         <p id="ket-qua-bai-5"></p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
